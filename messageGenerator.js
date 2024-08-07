@@ -1,36 +1,11 @@
 // Message Generator apps
 const messageGeneratorComponents = {
-    subject: ["L'attaquant",
-              "Le défenseur",
-              "Le gardien",
-              "Le joueur de tennis",
-              "Le coureur",
-              "Le nageur",
-              "Le boxeur",
-              "L'arbitre",
-              "L'entraîneur",
-              "L'équipe",],
-    verb: ["marque",
-           "défend",
-           "bloque",
-           "sert",
-           "court",
-           "nage",
-           "frappe",
-           "siffle",
-           "entraîne",
-           "gagne",],
-    noun: ["un but",
-           "une passe",
-           "une frappe",
-           "un as",
-           "un sprint",
-           "une longueur",
-           "un coup",
-           "une faute",
-           "un exercice",
-           "le match",],
+    subject: ["The athlete", "The coach", "The referee", "The team", "The player", "The captain", "The goalkeeper", "The striker", "The defender", "The midfielder"],
+    verb: ["kicks", "throws", "catches", "dribbles", "passes", "blocks", "scores", "runs", "jumps", "tackles"],
+    noun: ["the ball", "the goal", "the opponent", "the game", "the match", "the practice", "the field", "the net", "the trophy", "the fans"],
 }
+
+
 
 const randomSubject = messageGeneratorComponents.subject[Math.floor(Math.random() * 10)];
 const randomVerb = messageGeneratorComponents.verb[Math.floor(Math.random() * 10)];
