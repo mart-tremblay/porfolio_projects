@@ -1,5 +1,5 @@
 // Message Generator apps
-const messageGenerator = {
+const messageGeneratorComponents = {
     subject: ["L'attaquant",
               "Le défenseur",
               "Le gardien",
@@ -30,7 +30,9 @@ const messageGenerator = {
            "une faute",
            "un exercice",
            "le match",],
-
-
 }
+
+const randomSubject = messageGeneratorComponents.subject[Math.floor(Math.random() * 10)];
+const randomVerb = messageGeneratorComponents.verb[Math.floor(Math.random() * 10)];
+const randomNoun = messageGeneratorComponents.noun[Math.floor(Math.random() * 10)];
 
