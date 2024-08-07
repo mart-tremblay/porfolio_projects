@@ -23,7 +23,7 @@ const messageGeneratorComponents = {
     noun: ["un but",
            "une passe",
            "une frappe",
-           "un ace",
+           "un as",
            "un sprint",
            "une longueur",
            "un coup",
@@ -36,3 +36,6 @@ const randomSubject = messageGeneratorComponents.subject[Math.floor(Math.random(
 const randomVerb = messageGeneratorComponents.verb[Math.floor(Math.random() * 10)];
 const randomNoun = messageGeneratorComponents.noun[Math.floor(Math.random() * 10)];
 
+const generateMessage = (subject, verb, noun) => console.log(`${subject} ${verb} ${noun}!`);
+
+generateMessage(randomSubject, randomVerb, randomNoun);
